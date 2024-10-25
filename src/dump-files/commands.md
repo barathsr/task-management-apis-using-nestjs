@@ -5,4 +5,5 @@
 - nest g --help = displays all the schematics.
 - nest g module module-name = creates a module and updates in the root module. 'g'  stand for generic 'module' is a schematic
 - nest g controller controller-name --no-spec = creates a controller without specs.
-   
+- nest g service service-name --no-spec = creates a service without specs.
+
