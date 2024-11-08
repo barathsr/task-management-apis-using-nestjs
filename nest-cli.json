@@ -4,6 +4,6 @@
   "sourceRoot": "src",
   "compilerOptions": {
     "deleteOutDir": true,
-    "assets": ["!src/project-dumps/old-files/*"]
+    "assets": ["!project-dumps/old-files/*"]
   }
 }

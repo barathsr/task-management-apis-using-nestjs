@@ -6,4 +6,6 @@
 - Running postgreSQL via docker - https://gist.github.com/arielweinberger/a6ccf45fb7501fd1bd15bd5632ea9056
 - TypeORM docs - https://typeorm.io/
 - Active Record vs Data Mapper in typeORM - https://github.com/typeorm/typeorm/blob/master/docs/active-record-data-mapper.md
-- TypeORM Repository APIs - https://typeorm.io/repository-api 
+- TypeORM Repository APIs - https://typeorm.io/repository-api
+- Regular Expression wikipedia - https://en.wikipedia.org/wiki/Regular_expression
+- Regular Expression GitHub - https://gist.github.com/arielweinberger/18a29bfa17072444d45adaeeb8e92ddc 
