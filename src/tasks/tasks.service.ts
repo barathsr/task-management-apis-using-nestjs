@@ -23,7 +23,7 @@ export class TasksService {
     // if(search){
     //   query.andWhere(
     //     'task.title LIKE :search OR task.description LIKE :search', 
-    //     {search:`%{search}%`},
+    //     {search:`%${search}%`}, // % match for partially equal 
     //   );
     // }
     const tasks = await this.tasksRepository.find();
