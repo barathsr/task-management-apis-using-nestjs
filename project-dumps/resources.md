@@ -9,4 +9,5 @@
 - TypeORM Repository APIs - https://typeorm.io/repository-api
 - Regular Expression wikipedia - https://en.wikipedia.org/wiki/Regular_expression
 - Regular Expression GitHub - https://gist.github.com/arielweinberger/18a29bfa17072444d45adaeeb8e92ddc
-- Password hashing - https://emn178.github.io/online-tools/sha256.html 
+- Password hashing - https://emn178.github.io/online-tools/sha256.html
+- JWT - https://jwt.io/

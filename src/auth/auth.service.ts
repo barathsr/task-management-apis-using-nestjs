@@ -33,4 +33,5 @@ export class AuthService {
   // TODO: Logout user (logout)
   // TODO: delete user
   // TODO: Me user
+  // TODO: Learn how salt is compared with random one
 }
