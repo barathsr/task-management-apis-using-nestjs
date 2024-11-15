@@ -1,4 +1,5 @@
 # Resources
+- TypeScript Docs - https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html
 - NestJS pipes concept - https://docs.nestjs.com/pipes
 - Class validator github repo - https://github.com/typestack/class-validator
 - Docker download link - https://www.docker.com/products/docker-desktop/
