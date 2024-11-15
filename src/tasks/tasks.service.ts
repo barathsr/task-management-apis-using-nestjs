@@ -15,7 +15,7 @@ export class TasksService {
     private tasksRepository: TasksRepository,
     
   ) {}
-  async getAllTasks(filterDto: GetTasksFilterDto): Promise<Task[]>{
+  async getAllTasks(filterDto: GetTasksFilterDto, user: User): Promise<Task[]>{
     const { status, search } = filterDto;
     // const query = await DataSource.createQueryBuilder('task')
     // if(status){
@@ -27,7 +27,13 @@ export class TasksService {
     //     {search:`%${search}%`}, // % match for partially equal 
     //   );
     // }
-    const tasks = await this.tasksRepository.find();
+    let tasks = await this.tasksRepository.find({where:{user}});
+    // TODO: want to add filter and search options 
+    if(status){
+      tasks = tasks.filter((task) => {
+        return task.status === status;
+      })
+    }
     return tasks;
   }
 
