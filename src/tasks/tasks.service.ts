@@ -1,6 +1,6 @@
 import { User } from 'src/auth/user.entity';
 import { CreateTaskDto } from './dto/create-task.dto';
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { Injectable, InternalServerErrorException, Logger, NotFoundException } from '@nestjs/common';
 import { TaskStatus } from './tasks.status.enum';
 import { GetTasksFilterDto } from './dto/get-task-filter.dto';
 import { InjectRepository } from '@nestjs/typeorm';
@@ -10,6 +10,7 @@ import { TasksRepository } from './tasks.repository';
 
 @Injectable()
 export class TasksService {
+  private logger = new Logger('TaskService');
   constructor(
     @InjectRepository(TasksRepository)
     private tasksRepository: TasksRepository,
@@ -27,7 +28,8 @@ export class TasksService {
     //     {search:`%${search}%`}, // % match for partially equal 
     //   );
     // }
-    let tasks = await this.tasksRepository.find({where:{user}});
+    try {
+      let tasks = await this.tasksRepository.find({where:{user}});
     // TODO: want to add filter and search options 
     if(status){
       tasks = tasks.filter((task) => {
@@ -35,6 +37,13 @@ export class TasksService {
       })
     }
     return tasks;
+    } catch (error) {
+      this.logger.error(
+        `Error message: "${error.message}". Failed to get tasks for user: "${user.userName}". Filters: ${JSON.stringify(filterDto)}`,
+        error.stack,
+      )
+      throw new InternalServerErrorException();
+    }
   }
 
   async getTaskById (id: string, user: User): Promise<Task> {

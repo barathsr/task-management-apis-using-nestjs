@@ -13,3 +13,4 @@
 - Password hashing - https://emn178.github.io/online-tools/sha256.html
 - JWT - https://jwt.io/
 - Interceptor to serialize user data - https://gist.github.com/arielweinberger/f5c02406b48bb0e145e8542c7006649f
+- Logger - https://docs.nestjs.com/techniques/logger
