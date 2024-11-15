@@ -32,13 +32,13 @@
 | tasks/:id/status| PATCH      | Update task status|
 
 ### API Endpoints - Auth
-| Endpoints   | Method      | Description   |
-| :---        |    :----:   |          ---: |
-| auth/signup/ | POST       | User sign up|
-| auth/signin/ |   POST      | User sign in      |
-| auth/:id/ |   POST      | User logout      |
-| auth/:id/      |   PATCH     | Edit user   |
-| auth/:id/  | DELETE        | Delete user|
+| Endpoints    | Method      | Description   |
+| :---         |    :----:   |          ---: |
+| auth/signup/ | POST        | User sign up  |
+| auth/signin/ |   POST      | User sign in  |
+| auth/:id/    |   POST      | User logout   |
+| auth/:id/    |   PATCH     | Edit user     |
+| auth/:id/    | DELETE      | Delete user   | 
 
 
 ## 3. Objectives:
@@ -78,9 +78,20 @@
 ### Front-end Application
 - Fully-featured front-end application that consumes the API we are developing.
 
-### 
--
--
--
--
--
+## 4. Bonus:
+### Logging
+- **Log** - General purpose logging of important information.
+- **Warning** - Unhandled issues that are not fatal or destructive.
+- **Error** - Unhandled issues that are fatal or destructive.
+- **Debug** - Useful information that can help us debug the logic in case of an error/warning. Intended for developers.
+- **Verbose** - Information providing insights about the behavior of the application. Intended for operations(for example, support). Usually "too much information".   
+
+### Log levels
+Here we define multiple log levels for different log environments. for example:
+|             | Log | Error | Warning | Debug | Verbose |
+|-------------|-----|-------|---------|-------|---------|
+| **Development** | ✔   | ✔     | ✔       | ✔     | ✔ |
+| **Staging**     | ✔   | ✔     | ✔       | ✘     | ✘ |
+| **Production**  | ✔   | ✔     | ✘       | ✘     | ✘ |
+
+
