@@ -7,9 +7,11 @@
 - nest g module module-name => creates a module and updates in the root module. 'g'  stand for generic 'module' is a schematic
 - nest g controller controller-name --no-spec => creates a controller without specs.
 - nest g service service-name --no-spec => creates a service without specs.
+- "start:dev": "cross-env STAGE=dev nest start --watch" => 
 
 ## Yarn
 - yarn run start:dev => start the project in watch mode.
+- env=value yarn run start:dev => start the project in watch mode. and add environment variables.
 
 ## Docker
 - docker => used to check the docker installation and commands

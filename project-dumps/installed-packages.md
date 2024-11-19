@@ -7,8 +7,10 @@
 - typeorm - allows you to manage object relational mapping with Relational DBs.
 - @nestjs/typeorm - It is a wrapper around the nextjs and typeorm
 - pg - database driver tells typeorm how to use the database. official driver of postgres.
-- @nextjs/jwt -
+- @nestjs/jwt -
 - @nestjs/passport -
 - passport - 
 - passport-jwt -
 - @types/passport-jwt -
+- cross-env -
+- @nestjs/config - 
