@@ -14,3 +14,5 @@
 - @types/passport-jwt -
 - cross-env -
 - @nestjs/config - 
+- @hapi/joi - 
+- @types/hapi__joi

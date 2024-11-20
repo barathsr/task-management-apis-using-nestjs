@@ -12,7 +12,9 @@
 ## Yarn
 - yarn run start:dev => start the project in watch mode.
 - env=value yarn run start:dev => start the project in watch mode. and add environment variables.
-
+- yarn add package_name => add the package
+- yarn add -D package_name => add the package as a dev dependency
+- yarn remove package_name => remove the package
 ## Docker
 - docker => used to check the docker installation and commands
 - docker version => displays the docker version
