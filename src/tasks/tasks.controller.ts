@@ -27,8 +27,10 @@ export class TasksController {
   private logger = new Logger('TasksController');
   constructor(
     private tasksService: TasksService,
-    private configService: ConfigService,
-  ) {console.log(configService.get('TEST'))}
+    // private configService: ConfigService,
+  ) {
+  // console.log(configService.get('DB_PORT'))
+  }
 
   @Get()
   getTasks(
