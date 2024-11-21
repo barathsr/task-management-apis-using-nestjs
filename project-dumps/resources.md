@@ -16,3 +16,4 @@
 - Logger - https://docs.nestjs.com/techniques/logger
 - Secure password generator - https://passwordsgenerator.net/
 - Front End Application - https://github.com/arielweinberger/task-management-frontend
+- JestJs - https://jestjs.io/
